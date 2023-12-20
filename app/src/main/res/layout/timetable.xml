@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".TimetableActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="210dp"
+            android:text="시간표"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/listplus_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/plus"
+            android:layout_gravity="fill"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="@color/greenTema2"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/ic_outline_palette_24"
+            android:layout_gravity="fill"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="@color/greenTema2"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:fab_size="mini" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:id="@+id/gridlayout_timetable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:columnCount="6"
+            android:orientation="horizontal"
+            android:rowCount="10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text="" />
+
+            <TextView
+                android:layout_width="69dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text="월"/>
+
+            <TextView
+                android:layout_width="69dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text="화" />
+
+            <TextView
+                android:layout_width="69dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text="수" />
+
+            <TextView
+                android:layout_width="69dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text="목" />
+
+            <TextView
+                android:layout_width="69dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text="금" />
+
+            <!--1교시-->
+            <TextView
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text=" 9 " />
+
+            <TextView
+                android:id="@+id/monday1"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="monday1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tuesday1"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="tuesday1"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/wednesday1"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="wednesday1"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/thursday1"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="thursday1"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/friday1"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="friday1"
+                android:text=""/>
+
+            <!--2교시-->
+            <TextView
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text=" 10 " />
+
+            <TextView
+                android:id="@+id/monday2"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="monday2"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/tuesday2"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="tuesday2"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/wednesday2"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="wednesday2"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/thursday2"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="thursday2"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/friday2"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="friday2"
+                android:text=""/>
+
+            <!--3교시-->
+            <TextView
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text=" 11 " />
+
+            <TextView
+                android:id="@+id/monday3"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="monday3"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/tuesday3"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="tuesday3"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/wednesday3"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="wednesday3"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/thursday3"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="thursday3"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/friday3"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="friday3"
+                android:text=""
+                android:clickable="true"/>
+
+            <!--4교시-->
+            <TextView
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text=" 12 " />
+
+            <TextView
+                android:id="@+id/monday4"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="monday4"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/tuesday4"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="tuesday4"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/wednesday4"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="wednesday4"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/thursday4"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="thursday4"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/friday4"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="friday4"
+                android:text=""
+                android:clickable="true"/>
+
+            <!--5교시-->
+            <TextView
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text=" 1 " />
+
+            <TextView
+                android:id="@+id/monday5"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="monday5"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/tuesday5"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="tuesday5"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/wednesday5"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="wednesday5"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/thursday5"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="thursday5"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/friday5"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="friday5"
+                android:text=""
+                android:clickable="true"/>
+
+            <!--6교시-->
+            <TextView
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text=" 2 " />
+
+            <TextView
+                android:id="@+id/monday6"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="monday6"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/tuesday6"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="tuesday6"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/wednesday6"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="wednesday1"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/thursday6"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="thursday6"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/friday6"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="friday6"
+                android:text=""
+                android:clickable="true"/>
+
+            <!--7교시-->
+            <TextView
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text=" 3 " />
+
+            <TextView
+                android:id="@+id/monday7"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="monday7"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/tuesday7"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="tuesday7"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/wednesday7"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="wednesday7"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/thursday7"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="thursday7"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/friday7"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="friday7"
+                android:text=""
+                android:clickable="true"/>
+
+            <!--8교시-->
+            <TextView
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text=" 4 " />
+
+            <TextView
+                android:id="@+id/monday8"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="monday8"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/tuesday8"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="tuesday8"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/wednesday8"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="wednesday8"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/thursday8"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="thursday8"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/friday8"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="friday8"
+                android:text=""
+                android:clickable="true"/>
+
+            <!--9교시-->
+            <TextView
+                android:layout_rowWeight="1"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="center"
+                android:text=" 5 " />
+
+            <TextView
+                android:id="@+id/monday9"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="monday9"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/tuesday9"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="tuesday9"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/wednesday9"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="wednesday1"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/thursday9"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="thursday9"
+                android:text=""
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/friday9"
+                android:layout_width="69dp"
+                android:layout_gravity="fill"
+                android:background="@drawable/cell"
+                android:gravity="top"
+                android:tag="friday9"
+                android:text=""
+                android:clickable="true"/>
+        </GridLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

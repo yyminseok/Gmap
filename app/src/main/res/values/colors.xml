@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#112D4E</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#DBE2EF</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--
+    <color name="home_background">#ECF9FF</color>
+    <color name="tab_icon_background">#FF3030FF</color>
+    <color name="tab_background">#6CAFFF</color>
+    <color name="info_list_back_1">#EAF3FF</color>
+    <color name="info_list_back_2">#D5E1FF</color>
+    <color name="info_list_back_3">#EAF3FF</color> -->
+
+    <color name="home_background">#F9F7F7</color>
+    <color name="tab_icon_background">#222831</color>
+    <color name="tab_background">#3F72AF</color>
+    <color name="spinner_background">#DBE2EF</color>
+    <color name="info_list_back_1">#EEEEEE</color>
+    <color name="info_list_border">#3F72AF</color>
+    <color name="info_list_back_2">#EEEEEE</color>
+    <color name="info_list_back_3">#EEEEEE</color>
+    <color name="info_title_back">#3F72AF</color>
+    <color name="info_title_text">#EEEEEE</color>
+
+    <color name="greenTema1">#5F7161</color>
+    <color name="greenTema2">#6D8B74</color>
+    <color name="greenTema3">#A2B38B</color>
+    <color name="greenTema4">#D0C9C0</color>
+    <color name="greenTema5">#576F72</color>
+    <color name="greenTema6">#7D9D9C</color>
+    <color name="greenTema7">#92BA92</color>
+    <color name="greenTema8">#EFEAD8</color>
+
+    <color name="blueTema1">#1A374D</color>
+    <color name="blueTema2">#406882</color>
+    <color name="blueTema3">#6998AB</color>
+    <color name="blueTema4">#476072</color>
+    <color name="blueTema5">#B1D0E0</color>
+    <color name="blueTema6">#548CA8</color>
+    <color name="blueTema7">#304665</color>
+    <color name="blueTema8">#053742</color>
+
+    <color name="pinkTema1">#F65A83</color>
+    <color name="pinkTema2">#FF87B2</color>
+    <color name="pinkTema3">#FF74B1</color>
+    <color name="pinkTema4">#FFA1CF</color>
+    <color name="pinkTema5">#FFCACA</color>
+    <color name="pinkTema6">#FF97C1</color>
+    <color name="pinkTema7">#FFACC7</color>
+    <color name="pinkTema8">#FF8FB1</color>
+
+    <color name="aquaTema1">#017D86</color>
+    <color name="aquaTema2">#09B3C5</color>
+    <color name="aquaTema3">#B19786</color>
+    <color name="aquaTema4">#406D7A</color>
+    <color name="aquaTema5">#B8B3AF</color>
+    <color name="aquaTema6">#565A52</color>
+    <color name="aquaTema7">#03585E</color>
+    <color name="aquaTema8">#C5B4A7</color>
+</resources>

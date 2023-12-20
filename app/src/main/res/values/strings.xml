@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gmap_Project2</string>
+    <string name="title_home">Home</string>
+    <string name="title_map">Map</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="title_option">Option</string>
+</resources>

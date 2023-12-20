@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeFragment"
+    android:background="@color/home_background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/main_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@color/home_background">
+
+            <ImageView
+                android:layout_width="187dp"
+                android:layout_height="208dp"
+                android:layout_gravity="center"
+                android:paddingTop="100px"
+                android:scaleType="fitXY"
+                android:src="@drawable/main_logo" />
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="150px"
+                android:paddingTop="20px">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/edt_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="150px"
+                    android:layout_weight="1"
+                    android:singleLine="true" />
+
+                <ImageButton
+                    android:id="@+id/btn_search"
+                    android:layout_width="80px"
+                    android:layout_height="80px"
+                    android:src="@drawable/search_icon"
+                    android:background="@color/home_background"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="50px"
+                android:layout_gravity="center_vertical"
+                android:background="@color/home_background"
+                android:orientation="vertical">
+                <Spinner
+                    android:id="@+id/spn_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:layout_weight="1"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center"
+                    android:background="@drawable/spiner_back"
+                    android:layout_marginBottom="20px"
+                    android:popupBackground="@color/tab_background"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_search_result"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20px"
+                android:background="@color/white">
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
